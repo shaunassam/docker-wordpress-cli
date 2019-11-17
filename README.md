@@ -9,7 +9,7 @@ The MySQL database is accessible from the host.
 1. Run WordPress
 
     ```
-    docker run --name my-wordpress -p 80:80 -d kaihofstetter/wordpress-cli
+    docker run --name my-wordpress -p 80:80 -d shaunassam/wpaio-ubuntu1804
     ```
 2. Access WordPress
 
@@ -35,7 +35,7 @@ WordPress needs to know the site URL used by the host, because WordPress redirec
 1. Run WordPress
 
     ```
-    docker run --name my-wordpress -p 8080:80 -e WP_URL="localhost:8080" -d kaihofstetter/wordpress-cli
+    docker run --name my-wordpress -p 8080:80 -e WP_URL="localhost:8080" -d shaunassam/wpaio-ubuntu1804
     ```
 2. Access WordPress
 
@@ -48,7 +48,7 @@ WordPress needs to know the site URL used by the host, because WordPress redirec
 Run WordPress with mapped MySQL port 3306:
 
 ```
-docker run --name my-wordpress -p 80:80 -p 3306:3306 -d kaihofstetter/wordpress-cli
+docker run --name my-wordpress -p 80:80 -p 3306:3306 -d shaunassam/wpaio-ubuntu1804
 ```
 
 The MySQL database is accessible via ```port 3306```, ```user: WordPress``` and ```password: secret```.
